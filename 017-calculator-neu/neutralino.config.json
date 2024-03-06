@@ -33,10 +33,10 @@
   "modes": {
     "window": {
       "title": "017-calculator-neu",
-      "width": 800,
-      "height": 500,
-      "minWidth": 400,
-      "minHeight": 200,
+      "width": 1800,
+      "height": 1500,
+      "minWidth": 1400,
+      "minHeight": 1200,
       "center": true,
       "fullScreen": false,
       "alwaysOnTop": false,

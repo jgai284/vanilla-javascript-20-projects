@@ -1,3 +1,29 @@
+// // Check if Neutralino object is available
+// if (typeof Neutralino !== "undefined") {
+//   console.log("Neutralino is available.");
+//   // Now you can use Neutralino APIs or perform other operations
+//   // For example, you can initialize Neutralino and add event listeners here
+//   Neutralino.init();
+//   window.addEventListener("unload", handleWindowClose);
+// } else {
+//   console.log("Neutralino is not available. Make sure it's properly loaded.");
+// }
+
+// // Function to handle window close event
+// function handleWindowClose() {
+//   Neutralino.app.exit();
+// }
+
+// Neutralino.init();
+
+// // Add event listener for window close event
+// window.addEventListener("unload", handleWindowClose);
+
+Neutralino.init();
+Neutralino.events.on("windowClose", () => {
+  Neutralino.app.exit();
+});
+
 const calculatorDisplay = document.querySelector("h1");
 const inputBtns = document.querySelectorAll("button");
 const clearBtn = document.getElementById("clear-btn");
